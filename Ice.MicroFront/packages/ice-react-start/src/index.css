@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+#root {
+  height: 100%;
+}
+
+.must::after {
+  content: '*';
+  color: red;
+  margin-left: 3px;
+  top: -1px;
+  position: absolute;
+}
+
+.themebg {
+  background: linear-gradient(to right bottom,#6457c1,#b84297);
+}
+
+.themebg-r {
+  background: linear-gradient(to right bottom,#b84297,#6457c1);
+}
+
+.theme-color {
+  background-color: #722ed1;
+}
+
+.ice-scrollbar {
+  /* 第一个方块颜色，第二个轨道颜色(用于更改火狐浏览器样式) */
+  scrollbar-color: rgb(142, 142, 142) #fff0;
+  /* 火狐滚动条无法自定义宽度，只能通过此属性使滚动条宽度变细 */
+  scrollbar-width: thin;
+}
+
+/*滚动条样式*/
+.ice-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.ice-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgb(142, 142, 142);
+  -webkit-box-shadow: inset 0 0 5px rgb(142, 142, 142);
+  background: rgb(142, 142, 142);
+}
+
+.ice-scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fff0;
+  -webkit-box-shadow: inset 0 0 5px #fff0;
+  border-radius: 0;
+  background: #fff0;
+}
+
+
+.ice-scrollbar-bgwhite {
+  /* 第一个方块颜色，第二个轨道颜色(用于更改火狐浏览器样式) */
+  scrollbar-color: rgb(210, 210, 210) #fff0;
+  /* 火狐滚动条无法自定义宽度，只能通过此属性使滚动条宽度变细 */
+  scrollbar-width: thin;
+}
+
+/*滚动条样式*/
+.ice-scrollbar-bgwhite::-webkit-scrollbar {
+  width: 4px;
+}
+
+.ice-scrollbar-bgwhite::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgb(210, 210, 210);
+  -webkit-box-shadow: inset 0 0 5px rgb(210, 210, 210);
+  background: rgb(210, 210, 210);
+}
+
+.ice-scrollbar-bgwhite::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fff0;
+  -webkit-box-shadow: inset 0 0 5px #fff0;
+  border-radius: 0;
+  background: #fff0;
+}

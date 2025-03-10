@@ -1,0 +1,15 @@
+.layout-commonpage-tab {
+}
+
+.layout-commonpage-tab .ant-tabs-content-holder {
+    width: 0px;
+    border-right: 0px;
+}
+
+.layout-commonpage-tab .ant-tabs-tab {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
+    border: 0px !important;
+}

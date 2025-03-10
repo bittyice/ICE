@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Ice.Auth</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AlipaySDKNet.Standard" Version="4.8.2" />
+    <PackageReference Include="SKIT.FlurlHttpClient.Wechat.Api" Version="2.21.1"/>
+    <PackageReference Include="SKIT.FlurlHttpClient.Wechat.TenpayV3" Version="2.15.2"/>
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.0.1"/>
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta15"/>
+    <PackageReference Include="SixLabors.Fonts" Version="1.0.0-beta19"/>
+    <PackageReference Include="TencentCloudSDK" Version="3.0.789"/>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="7.3.0" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="7.3.0" />
+    <ProjectReference Include="..\Ice.Auth.Application.Contracts\Ice.Auth.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Ice.Auth.Domain\Ice.Auth.Domain.csproj" />
+    <ProjectReference Include="../../../../shareds/Ice.Common/Ice.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Helpers\font.ttf" />
+    <EmbeddedResource Include="images\**\*.*" />
+  </ItemGroup>
+</Project>

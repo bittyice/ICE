@@ -1,0 +1,11 @@
+{
+	"name": "ice-psi",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"types": "src/index.ts",
+	"license": "MIT",
+	"dependencies": {
+		"ice-core": "workspace:^",
+		"ice-layout": "workspace:^"
+	}
+}

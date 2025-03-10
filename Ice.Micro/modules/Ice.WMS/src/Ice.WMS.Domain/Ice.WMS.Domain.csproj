@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Ice.WMS</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="7.3.0" />
+    <ProjectReference Include="..\Ice.WMS.Domain.Shared\Ice.WMS.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

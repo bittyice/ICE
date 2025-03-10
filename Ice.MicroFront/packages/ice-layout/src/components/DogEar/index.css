@@ -1,0 +1,26 @@
+.dogear{
+    display: block;
+    border: 30px solid #bae637;
+    border-left-color: #fff0;
+    border-bottom-color: #fff0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.dogear-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    height: 0px;
+    left: 10px;
+    top: -10px;
+    white-space: nowrap;
+    z-index: 999;
+    color: aliceblue;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);   /* IE 9 */
+    -webkit-transform: rotate(45deg);   /* Safari and Chrome */
+}

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Ice.PSI</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="7.3.0" />
+    <ProjectReference Include="..\Ice.PSI.Application\Ice.PSI.Application.csproj" />
+    <ProjectReference Include="..\Ice.PSI.EntityFrameworkCore\Ice.PSI.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>

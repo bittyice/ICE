@@ -1,0 +1,27 @@
+1. 在各个项目执行命令生成迁移
+# dotnet ef migrations script
+注意添加 use xxx;
+
+2. 执行 ./build.sh 命令生成项目并发布到远程服务器
+
+3. 熔断kong
+
+4. 停止docker 
+# sudo docker-compose down
+
+5. 备份数据库
+
+6. 执行迁移 sql，然后执行 VerMSql 下的版本 sql
+
+7. 重新生成 docker 镜像
+# sudo docker-compose build
+
+8. 开始 docker
+# sudo docker-compose up -d
+
+9. 前端项目将git切换到publish分支，执行如下命令生成pda
+yarn build:android
+
+10. 将pda发布至fir上
+
+11. 解除kong熔断

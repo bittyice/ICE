@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.must::after {
+  content: '*';
+  color: red;
+  margin-left: 3px;
+  top: -1px;
+  position: absolute;
+}
+
+:root:root {
+  --adm-color-primary: #722ed1;
+}
+
+.themebg {
+  background: linear-gradient(to right bottom, #6457c1, #b84297);
+}
+
+.themebg-r {
+  background: linear-gradient(to right bottom, #b84297, #6457c1);
+}
+
+.theme-color {
+  background-color: #722ed1;
+}
+
+* {
+  box-sizing: border-box;
+}

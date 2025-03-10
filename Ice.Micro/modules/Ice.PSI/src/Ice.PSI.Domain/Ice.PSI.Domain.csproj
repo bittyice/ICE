@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>net7.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Ice.PSI</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="7.3.0" />
+    <ProjectReference Include="..\Ice.PSI.Domain.Shared\Ice.PSI.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

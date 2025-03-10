@@ -1,0 +1,26 @@
+.wms-ianalysis {
+
+}
+
+.wms-ianalysis-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wms-ianalysis-top-item {
+    width: 49.5%;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wms-ianalysis-tables {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wms-ianalysis-tables>div{
+    width: 49.5%;
+}

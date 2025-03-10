@@ -1,0 +1,45 @@
+.classify-body {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.classify-item {
+    width: 250px;
+    height: 400px;
+    background-color: #fff; 
+    display: flex; 
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.classify-item-menus {
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-grow: 1;
+    flex-shrink: 999;
+
+    /* 第一个方块颜色，第二个轨道颜色(用于更改火狐浏览器样式) */
+    scrollbar-color: rgb(142, 142, 142) #3c3c3c;
+    /* 火狐滚动条无法自定义宽度，只能通过此属性使滚动条宽度变细 */
+    scrollbar-width: thin;
+}
+
+/*滚动条样式*/
+.classify-item-menus::-webkit-scrollbar {
+    width: 4px;    
+}
+.classify-item-menus::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgb(142, 142, 142);
+    -webkit-box-shadow: inset 0 0 5px rgb(142, 142, 142);
+    background: rgb(142, 142, 142);
+}
+.classify-item-menus::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ccc;
+    -webkit-box-shadow: inset 0 0 5px #ccc;
+    border-radius: 0;
+    background: #ccc;
+}

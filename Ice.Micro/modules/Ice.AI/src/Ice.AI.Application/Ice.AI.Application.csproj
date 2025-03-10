@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"/>
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Ice.AI</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="7.3.0"/>
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="7.3.0"/>
+    <ProjectReference Include="..\Ice.AI.Application.Contracts\Ice.AI.Application.Contracts.csproj"/>
+    <ProjectReference Include="..\Ice.AI.Domain\Ice.AI.Domain.csproj"/>
+    <ProjectReference Include="../../../../shareds/Ice.Common/Ice.Common.csproj" />
+    <ProjectReference Include="../../../Ice.Auth/src/Ice.Auth.Application/Ice.Auth.Application.csproj" />
+  </ItemGroup>
+</Project>

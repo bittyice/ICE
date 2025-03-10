@@ -1,0 +1,36 @@
+.mine-header {
+    background-color: var(--adm-color-primary, #1677ff);
+    padding: 20px 20px 40px 20px;
+}
+
+.mine-header-top {
+    display: flex;
+    font-size: 16px;
+    color: #fff;
+    justify-content: center;
+}
+
+.mine-header-info {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.mine-header-info-avatar {
+    margin-right: 20px;
+}
+
+.mine-header-info-right {
+    color: #fff;
+    flex-grow: 1;
+}
+
+.mine-header-info-right>p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.mine-body {
+    margin: 15px 0px;
+}

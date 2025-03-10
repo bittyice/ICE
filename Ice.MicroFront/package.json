@@ -1,0 +1,34 @@
+{
+  "name": "icee",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.0",
+    "@types/react": "^18.2.12",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "compress-create-react-app": "^1.4.2",
+    "cross-env": "^7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.4.2"
+  },
+  "scripts": {
+    "start:android": "node icee -s 'yarn android' ice-rn-start",
+    "start:ios": "node icee -s 'yarn ios' ice-rn-start",
+    "start:web": "node icee -s 'yarn start' ice-react-start",
+    "start:mobile": "node icee -s 'yarn start' ice-mobile-start",
+    "build:web": "node icee -b ice-react-start && cd packages/ice-react-start && yarn build",
+    "build:mobile": "node icee -b ice-mobile-start && cd packages/ice-mobile-start && yarn build",
+    "build:android": "node icee -b ice-rn-start && cd packages/ice-rn-start/android && gradlew assembleRelease",
+    "rnDevProxy": "node packages/ice-rn-start/devProxyServer"
+  },
+  "version": "0.5.0",
+  "main": "index.js",
+  "author": "cql <1373611035@qq.com>",
+  "license": "MIT"
+}

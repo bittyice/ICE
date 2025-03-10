@@ -1,0 +1,23 @@
+.sale-return-order-print{
+    font-family: "Microsoft YaHei";
+    color: #000;
+}
+
+.sale-return-order-print th {
+    background-color: #fff !important;
+}
+
+.sale-return-order-print-table {
+    border-top: 0.5mm solid #000 !important;
+    border-left: 0.5mm solid #000 !important;
+    margin-top: 6px;
+}
+
+.sale-return-order-print-table th, .sale-return-order-print-table td {
+    border-right: 0.5mm solid #000 !important;
+    border-bottom: 0.5mm solid #000 !important;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}

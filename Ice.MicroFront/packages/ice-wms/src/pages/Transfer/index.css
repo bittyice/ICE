@@ -1,0 +1,13 @@
+.transfer-selectsku {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.transfer-selectsku-item {
+    width: 48%;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding: 10px 0px;
+    cursor: pointer;
+}

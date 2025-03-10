@@ -1,0 +1,4 @@
+dotnet ef migrations add 1_0 -p modules/Ice.WMS/src/Ice.WMS.EntityFrameworkCore -s hosts/Ice.Micro.HttpApi.Host
+dotnet ef database update -p modules/Ice.WMS/src/Ice.WMS.EntityFrameworkCore -s hosts/Ice.Micro.HttpApi.Host
+
+dotnet ef migrations script --idempotent -o psqls/wms.sql -p modules/Ice.WMS/src/Ice.WMS.EntityFrameworkCore -s hosts/Ice.Micro.HttpApi.Host

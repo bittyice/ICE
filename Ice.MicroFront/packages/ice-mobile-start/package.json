@@ -1,0 +1,47 @@
+{
+  "name": "ice-mobile-start",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "/mb",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "ice-core": "workspace:^",
+    "ice-mobile-admin": "workspace:^",
+    "ice-mobile-ai": "workspace:^",
+    "ice-mobile-layout": "workspace:^",
+    "ice-mobile-psi": "workspace:^",
+    "react-router-dom": "^6.12.1",
+    "react-scripts": "5.0.1",
+    "tailwindcss": "^3.2.7",
+    "web-vitals": "^2.1.4"
+  },
+  "iceeConfig": {
+    "hoistDependencies": false
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

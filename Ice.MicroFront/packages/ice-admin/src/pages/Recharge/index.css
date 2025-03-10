@@ -1,0 +1,31 @@
+.recharge {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recharge>div:nth-child(1) {
+    width: 24%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.recharge>div:nth-child(2) {
+    width: 74%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.recharge-wx-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.recharge-wx-card>div:nth-child(1){
+    width: 45%;
+
+}
+
+.recharge-wx-card>div:nth-child(2){
+    width: 54%;
+}

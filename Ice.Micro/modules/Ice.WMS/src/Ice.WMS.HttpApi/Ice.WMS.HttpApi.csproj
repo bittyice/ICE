@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Ice.WMS</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="7.3.0" />
+    <ProjectReference Include="..\Ice.WMS.Application\Ice.WMS.Application.csproj" />
+    <ProjectReference Include="..\Ice.WMS.EntityFrameworkCore\Ice.WMS.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>

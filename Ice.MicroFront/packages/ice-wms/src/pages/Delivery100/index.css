@@ -1,0 +1,19 @@
+.delivery-item {
+    position: relative;
+    cursor: pointer;
+    width: 250px;
+    height: 150px;
+    background-image: linear-gradient(to right, #bae637, #f4ffb8);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-item-notopen {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}

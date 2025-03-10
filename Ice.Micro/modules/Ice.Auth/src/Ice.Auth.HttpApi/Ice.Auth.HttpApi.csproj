@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Ice.Auth</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="7.3.0" />
+    <PackageReference Include="IdentityServer4" Version="4.1.2"/>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.0"/>
+    <ProjectReference Include="..\Ice.Auth.Application\Ice.Auth.Application.csproj" />
+    <ProjectReference Include="..\Ice.Auth.EntityFrameworkCore\Ice.Auth.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>

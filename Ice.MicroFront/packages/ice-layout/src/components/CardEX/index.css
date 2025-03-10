@@ -1,0 +1,25 @@
+.cardex {
+    margin-bottom: 15px;
+}
+
+.cardex-title {
+    margin-bottom: 15px !important;
+    border-radius: 6px;
+    font-size: 14px !important;
+    font-weight: 600;
+    color: #333333;
+}
+
+.cardex-divider {
+    margin-top: 0px !important;
+    margin-bottom: 15px !important;
+}
+
+.cardex-body {
+    justify-content: space-between;
+    padding-left: 5px;
+}
+
+.cardex-body>*{
+    margin-bottom: 15px;
+}

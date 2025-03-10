@@ -1,0 +1,16 @@
+{
+	"name": "ice-layout",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"types": "src/index.ts",
+	"license": "MIT",
+	"dependencies": {
+		"@ant-design/charts": "^1.4.2",
+		"antd": "^5.6.1",
+		"ice-core": "workspace:^",
+		"jsbarcode": "^3.11.5",
+		"pdfjs-dist": "^3.8.162",
+		"react-to-print": "^2.14.13",
+		"xlsx": "^0.18.5"
+	}
+}

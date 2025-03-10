@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Ice.Micro</RootNamespace>
+    <PreserveCompilationReferences>true</PreserveCompilationReferences>
+    <UserSecretsId>Ice.Micro-c2d31439-b723-48e2-b061-5ebd7aeb6010</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="5.0.0"/>
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0"/>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.0"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.1"/>
+    <PackageReference Include="Volo.Abp.Caching" Version="7.3.0"/>
+    <PackageReference Include="Volo.Abp.Autofac" Version="7.3.0"/>
+    <PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="7.3.0"/>
+    <PackageReference Include="Volo.Abp.Swashbuckle" Version="7.3.0"/>
+    <PackageReference Include="IdentityServer4" Version="4.1.2"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\modules\Ice.AI\src\Ice.AI.HttpApi\Ice.AI.HttpApi.csproj"/>
+    <ProjectReference Include="..\..\modules\Ice.Auth\src\Ice.Auth.HttpApi\Ice.Auth.HttpApi.csproj"/>
+    <ProjectReference Include="..\..\modules\Ice.PSI\src\Ice.PSI.HttpApi\Ice.PSI.HttpApi.csproj"/>
+    <ProjectReference Include="..\..\modules\Ice.WMS\src\Ice.WMS.HttpApi\Ice.WMS.HttpApi.csproj"/>
+    <ProjectReference Include="..\..\modules\Ice.Base\src\Ice.Base.HttpApi\Ice.Base.HttpApi.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Logs\**"/>
+    <Content Remove="Logs\**"/>
+    <EmbeddedResource Remove="Logs\**"/>
+    <None Remove="Logs\**"/>
+  </ItemGroup>
+</Project>
